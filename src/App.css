@@ -1,0 +1,347 @@
+/* primary
+green #495e57
+yellow #f4ce14
+secondary
+tan #ee9972
+ivory #fbdabb
+grey #edefee
+black #333333
+*/
+
+*{
+  font-family: "Karla", serif;
+  font-size: 16px;
+}
+.flex{
+  display:flex
+}
+nav section{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+}
+nav .large-screens{
+  display: none;
+}
+nav .mobile{
+  background-color: #fbdabb;
+  display: flex;
+  flex-direction: column;
+  gap:14px;
+  padding: 1rem 2rem;
+  transition: all 2s;
+}
+nav img:hover {
+  transform: scale(1.02);
+}
+ul{
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+}
+header ul a {
+  text-transform: uppercase;
+  color:black;
+}
+footer li{
+  margin-bottom: 8px;
+}
+footer ul a {
+  color:white;
+}
+header ul a:hover{
+  color:#495e57;
+  text-decoration: underline;
+  transition: all;
+}
+footer ul a:hover{
+  color: #f4ce14;
+  text-decoration: underline;
+  transition: all;
+}
+.menu{
+  display: block;
+}
+.hero-section, .testimonials, .footer{
+  background-color: #495e57;
+  color:white;
+  font-family: "Markazi Text", serif;
+  font-family: 12px;
+}
+.hero, .inner, .about, .form, .footer-inner {
+  padding: 1.5rem;
+  max-width: 992px;
+  margin: 0 auto;
+}
+.hero h1{
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  color:#f4ce14;
+  margin:0
+}
+.about h1{
+  font-family: "Markazi Text", serif;
+  font-size: 56px;
+  margin:0
+}
+.hero h2 {
+  margin:0;
+  font-size: 42px;
+}
+.about h2 {
+  margin:0;
+  font-size: 36px;
+}
+.hero p {
+  font-size: 18px;
+  letter-spacing: 0.25ch;
+  line-height: 1.5;
+}
+.about p {
+  font-size: 18px;
+  letter-spacing: 0.125ch;
+  line-height: 1.25;
+}
+.hero img {
+    width:100%;
+    height:300px;
+    border-radius :20px;
+    /* margin: 20px; */
+  }
+.hero img:hover{
+  cursor: pointer;
+}
+.about img {
+    width:100%;
+    height:300px;
+    border-radius :20px;
+    /* margin: 20px; */
+  }
+.about img:hover{
+  cursor: pointer;
+}
+.hero button {
+  background-color: #f4ce14;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero button:hover {
+  cursor:pointer;
+  background-color: #fbdabb;
+}
+.specials{
+  max-width: 992px;
+  margin:0 auto;
+  padding:1.5rem
+}
+.specials h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 56px;
+  margin:0
+}
+.specials button {
+  background-color: #f4ce14;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.specials button:hover {
+  cursor:pointer;
+  background-color: #fbdabb;
+  transition: color;
+}
+
+.products, .reviews{
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.products img{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px black solid;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.details{
+  padding: 0.25rem 1.25rem;
+  background-color: #edefee;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.products>div{
+  display: flex;
+  flex-direction: column;
+}
+.products .name {
+  font-family: "Markazi Text", serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin:0;
+}
+.details>div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  color:#ee9972;
+  font-weight: 600;
+}
+.desc{
+  color:#333333;
+}
+.order{
+  font-weight: 600;
+  margin-top:auto;
+}
+.order span{
+  display: inline-block;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.testimonials h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 48px;
+  color:#f4ce14;
+  margin:0;
+  text-align: center;
+}
+.reviews>div{
+  background-color: white;
+  color:black;
+  padding: 1rem;
+}
+.footer-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    color:white;
+  }
+/* .form{
+  background-color: #fbdabb;
+} */
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  padding: 3rem 3rem;;
+  box-shadow: 5px 5px 15px 5px #a8a8a8;
+  border-radius: 8px;
+}
+input, select{
+  width: '100%';
+  border:1px solid #767676;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+label{
+  font-weight: 600;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  header{
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  .hero, .about-inner {
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+  }
+  .hero p, .about p {
+    max-width: 390px;
+  }
+  .hero img {
+    width:400px;
+    height:500px;
+    position:relative;
+    bottom: -60px;
+    top:0;
+  }
+  .about img {
+    width:400px;
+    height:400px;
+  }
+  .hero button {
+    margin-bottom: 0;
+  }
+  .specials{
+    margin-top: 6rem;
+  }
+  .specials h1 {
+    font-size: 64px;
+  }
+  .products, .reviews{
+    margin-top: 1.25rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav .large-screens{
+    display: flex;
+    gap:24px;
+  }
+  .menu, .mobile{
+    display: none;
+  }
+  .products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+  }
+  .reviews{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hero {
+    padding: 2.5rem;
+    max-height: 400px;
+  }
+  .top{
+    display: flex;
+    justify-content: space-between;
+  }
+    .footer-inner{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  nav{
+    padding: 0.5rem 0;
+  }
+  .hero {
+    padding: 1rem 0;
+  }
+  .products{
+    gap:30px;
+  }
+}
